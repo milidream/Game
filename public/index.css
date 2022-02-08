@@ -6,6 +6,7 @@ body{
   background-color: #101223;
 }
 
+/*------------------------------------Menu------------------------------------*/
 h1{
   color: aliceblue;
   text-align:  center;
@@ -39,4 +40,24 @@ h1{
 
 img{
   width: 25px;
+}
+
+/*------------------------------------Menu------------------------------------*/
+
+.circle{
+  width: 300px;
+  height: 300px;
+  border-radius: 350px;
+  background-color: #3DCD6E;
+}.circle:hover{
+  border: 25px solid #159550;
+}
+
+#games{
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes de largeur différente */
+  grid-template-rows:400px 400px; /* 2 rangées */
+  padding:0; 
+  margin:12px;
 }
