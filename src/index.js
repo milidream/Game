@@ -20,6 +20,8 @@ function start(){
         let elementDiv = document.createElement("div");
         if(i==3){
             elementDiv.setAttribute("id", "chrono");
+            let chrono = document.createTextNode("0:00")
+            elementDiv.appendChild(chrono)
             game.append(elementDiv);
         }else{
             elementDiv.setAttribute("id", "circle" + i);
@@ -27,5 +29,6 @@ function start(){
             game.append(elementDiv);
         };
     };
+    
 };
 button.addEventListener("click", start);

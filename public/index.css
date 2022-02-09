@@ -48,9 +48,15 @@ img{
   width: 300px;
   height: 300px;
   border-radius: 350px;
-  background-color: #3DCD6E;
+  background-color: #cd3d3d;
 }.circle:hover{
-  border: 25px solid #159550;
+  border: 25px solid #951515;
+  cursor: pointer;
+}
+
+#chrono{
+  font-size: 300px;
+  color: white;
 }
 
 #games{
