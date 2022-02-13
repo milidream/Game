@@ -16,6 +16,7 @@
 
 >Installer les fichier ci-dessus
 >>Entrer cette commande dans le terminal "npm install" (nécessite Node.js)
+>>>Puis "npm start" et le jeu est lancé !
 
 ### En ligne
 
