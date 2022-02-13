@@ -12,12 +12,12 @@
 
 >Pas compliqué...
 
-##Snowpack
+### Snowpack
 
 >Installer les fichier ci-dessus
 >>Entrer cette commande dans le terminal "npm install" (nécessite Node.js)
 
-##En ligne
+### En ligne
 
 >Le site du projet: https://newgameproject.netlify.app/
 >La maquette du projet sur Figma: https://www.figma.com/file/1cun742Z1PukJzbQWOmOvH/New-Game-Project?node-id=0%3A1
