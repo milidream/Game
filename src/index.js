@@ -3,10 +3,11 @@ const button = document.querySelector("#play");
 let score = 1;
 
 class joueur{ //class permettant l'affichage du pseudo du jouer et son score.
-    constructor(pseudo, score);
-    pseudo = this.pseudo;
-    score = this.score;
-}
+    constructor(pseudo, score){
+        pseudo = this.pseudo;
+        score = this.score;
+    };
+};
 
 function start(){
     game.setAttribute("id", "games");
