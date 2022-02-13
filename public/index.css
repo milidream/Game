@@ -6,7 +6,8 @@ body{
   background-color: #101223;
 }
 
-/*------------------------------------Menu------------------------------------*/
+/*------------------------------------MainMenu------------------------------------*/
+
 h1{
   color: aliceblue;
   text-align:  center;
@@ -42,7 +43,7 @@ img{
   width: 25px;
 }
 
-/*------------------------------------Menu------------------------------------*/
+/*------------------------------------Game------------------------------------*/
 
 .circle{
   width: 300px;
@@ -54,24 +55,22 @@ img{
   cursor: pointer;
 }
 
-#chrono{
-  font-size: 300px;
-  color: white;
-}
-
-#games{
-  display: grid;
-  justify-content: center;
-  grid-template-columns: 1fr 1fr 1fr; /* 3 colonnes de largeur différente */
-  grid-template-rows:400px 400px; /* 2 rangées */
-  padding:0; 
-  margin:12px;
-}
-
 #games{
   pointer-events: none;
+  display: grid;
+  justify-content: center;
+  grid-template-columns: 1fr 1fr; /* 3 colonnes de largeur différente */
+  grid-template-rows:400px 400px; /* 2 rangées */
+  padding: 0; 
+  margin:12px;
+  margin-left: 420px;
+  margin-top: 110px;
+}#games .circle{
+  pointer-events: all;
 }
 
-#games .circle{
-  pointer-events: all;
+#score{
+  text-align: center;
+  font-size: 10rem;
+  color: aliceblue;
 }

@@ -1,12 +1,10 @@
 const game = document.querySelector("#game");
-const games = document.querySelector("#games");
 const button = document.querySelector("#play");
-let score = 0;
+let score = 1;
 
 function start(){
-    game.removeAttribute("id", "game")
-    game.setAttribute("id", "games")
-    while(game.firstChild) {
+    game.setAttribute("id", "games");
+    while(game.firstChild){
         game.removeChild(game.firstChild);
     };
     for(let i=1;i<5;i++){
@@ -22,11 +20,12 @@ function setGreen(){
     let nb = Math.floor((Math.random() * 4) + 1);
     let element = document.querySelector("#circle" + nb);
     element.style.backgroundColor = "#3DCD6E";
+    element.style.border = "0";
     element.dataset.correct = true;
 };
 
 function check(e){
-    const timeOut = setTimeout(gameOver, 3200);
+    const timeOut = setTimeout(gameOver, 10000);
     const circle = document.querySelectorAll(".circle");
     let selected = e.target;
     let correct = selected.dataset.correct;
@@ -36,14 +35,19 @@ function check(e){
         circle.forEach(button=>button.removeAttribute('data-correct'));
         setGreen();
         score++
-        console.log(score);
     }else{
-        console.log("pd");
+        score--;
     }
 };game.addEventListener("click", check);
 
-function gameOver() {
-    while(game.firstChild) {
+function gameOver(){
+    game.setAttribute("id", "fin");
+    while(game.firstChild){
         game.removeChild(game.firstChild);
     };
+    let newh2 = document.createElement("h2");
+    newh2.setAttribute("id", "score");
+    let finalScore = document.createTextNode("SCORE : " + score);
+    newh2.appendChild(finalScore);
+    game.appendChild(newh2);
 };
