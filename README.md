@@ -1,24 +1,23 @@
 # New Game
 
-> ✨ Bootstrapped with Create Snowpack App (CSA).
+> ✨ Mini jeu pour passer le temps.
 
-## Available Scripts
+## Règles du jeu
 
-### npm start
+>Cliquer un maximum sur les cercles vert en 10 secondes.
+>>1 point par cercle vert.
+>>>Les cercles rouges font perdre un point.
 
-Runs the app in the development mode.
-Open http://localhost:8080 to view it in the browser.
+## Comment y jouer?
 
-The page will reload if you make edits.
-You will also see any lint errors in the console.
+>Pas compliqué...
 
-### npm run build
+### Snowpack
 
-Builds a static copy of your site to the `build/` folder.
-Your app is ready to be deployed!
+>Installer les fichier ci-dessus
+>>Entrer cette commande dans le terminal "npm install" (nécessite Node.js)
 
-**For the best production performance:** Add a build bundler plugin like [@snowpack/plugin-webpack](https://github.com/snowpackjs/snowpack/tree/main/plugins/plugin-webpack) or [snowpack-plugin-rollup-bundle](https://github.com/ParamagicDev/snowpack-plugin-rollup-bundle) to your `snowpack.config.mjs` config file.
+### En ligne
 
-### Q: What about Eject?
-
-No eject needed! Snowpack guarantees zero lock-in, and CSA strives for the same.
+>Le site du projet: https://newgameproject.netlify.app/
+>>La maquette du projet sur Figma: https://www.figma.com/file/1cun742Z1PukJzbQWOmOvH/New-Game-Project?node-id=0%3A1
