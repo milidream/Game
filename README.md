@@ -4,9 +4,9 @@
 
 ## Règles du jeu
 
->>Cliquer un maximum sur les cercles vert en 10 secondes.
+>Cliquer un maximum sur les cercles vert en 10 secondes.
 >>1 point par cercle vert.
->>Les cercles rouges font perdre un point.
+>>>Les cercles rouges font perdre un point.
 
 ## Comment y jouer?
 
