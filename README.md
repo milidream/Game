@@ -21,3 +21,4 @@
 
 >Le site du projet: https://newgameproject.netlify.app/
 >>La maquette du projet sur Figma: https://www.figma.com/file/1cun742Z1PukJzbQWOmOvH/New-Game-Project?node-id=0%3A1
+>>>Le lien Trello: https://trello.com/b/DSGNYjFT/newgameproject
