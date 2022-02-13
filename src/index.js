@@ -1,13 +1,16 @@
 const game = document.querySelector("#game");
 const button = document.querySelector("#play");
-let score = 1;
 
-class joueur{ //class permettant l'affichage du pseudo du jouer et son score.
+class Joueur{ //class permettant l'affichage du pseudo du joueur et son score.
     constructor(pseudo, score){
-        pseudo = this.pseudo;
-        score = this.score;
+        this.pseudo = pseudo;
+        this.score = score;
     };
 };
+
+let pseudo =  prompt("Entrez votre pseudo");
+let score = 1;
+let joueur = new Joueur (pseudo, score);
 
 function start(){
     game.setAttribute("id", "games");
@@ -54,7 +57,7 @@ function gameOver(){ //affiche le score finale.
     };
     let newh2 = document.createElement("h2");
     newh2.setAttribute("id", "score");
-    let finalScore = document.createTextNode("SCORE : " + score);
+    let finalScore = document.createTextNode(pseudo + "VOTRE SCORE EST DE: " + score);
     newh2.appendChild(finalScore);
     game.appendChild(newh2);
 };
