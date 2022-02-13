@@ -15,7 +15,7 @@
 ### Snowpack
 
 >Installer les fichier ci-dessus
->>Entrer cette commande dans le terminal "npm install" (nécessite Node.js)
+>Entrer cette commande dans le terminal "npm install" (nécessite Node.js)
 
 ### En ligne
 
