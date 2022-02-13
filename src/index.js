@@ -2,7 +2,7 @@ const game = document.querySelector("#game");
 const button = document.querySelector("#play");
 let score = 1;
 
-class joueur{
+class joueur{ //class permettant l'affichage du pseudo du jouer et son score.
     constructor(pseudo, score);
     pseudo = this.pseudo;
     score = this.score;
@@ -10,10 +10,10 @@ class joueur{
 
 function start(){
     game.setAttribute("id", "games");
-    while(game.firstChild){
+    while(game.firstChild){ //boucle permettant de supprimer tous les éléments du main menu
         game.removeChild(game.firstChild);
     };
-    for(let i=1;i<5;i++){
+    for(let i=1;i<5;i++){ //boucle permettant la creation des 4 cercles.
         const elementDiv = document.createElement("div");
             elementDiv.setAttribute("id", "circle" + i);
             elementDiv.setAttribute("class", "circle");
@@ -22,7 +22,7 @@ function start(){
     setGreen();
 };button.addEventListener("click", start);
 
-function setGreen(){
+function setGreen(){ //fonction qui génère automatiquement le cercle vert.
     let nb = Math.floor((Math.random() * 4) + 1);
     let element = document.querySelector("#circle" + nb);
     element.style.backgroundColor = "#3DCD6E";
@@ -35,7 +35,7 @@ function check(e){
     const circle = document.querySelectorAll(".circle");
     let selected = e.target;
     let correct = selected.dataset.correct;
-    if(correct){
+    if(correct){ //condition vérifiant si l'éléments cliqué est le cercle vert avec son attribut "data-correct".
         clearTimeout(timeOut);
         circle.forEach(button=>button.removeAttribute('style'));
         circle.forEach(button=>button.removeAttribute('data-correct'));
@@ -46,7 +46,7 @@ function check(e){
     }
 };game.addEventListener("click", check);
 
-function gameOver(){
+function gameOver(){ //affiche le score finale.
     game.setAttribute("id", "fin");
     while(game.firstChild){
         game.removeChild(game.firstChild);
